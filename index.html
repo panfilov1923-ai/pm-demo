@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#F3F5F8" />
+    <title>Player Manager — демо</title>
+    <link rel="icon" href="/pm-demo/assets/v2/app-mark.webp" type="image/webp" />
+    <style>
+      .boot { min-height: 100dvh; display: grid; place-items: center; padding: 24px; font: 500 16px/24px "Onest Variable", system-ui, sans-serif; font-synthesis: none; color: #17202E; background: #F3F5F8; text-align: center; }
+      .boot a { color: #C9431A; word-break: break-all; }
+      .boot h1 { font-size: 24px; line-height: 30px; font-weight: 700; margin: 0 0 8px; }
+      .boot p { margin: 0 0 12px; }
+      .boot small { color: #475569; font-size: 14px; line-height: 20px; }
+      @media (prefers-color-scheme: dark) { .boot { color: #F8FAFC; background: #111318; } .boot a { color: #F8FAFC; } .boot small { color: #B5BFCD; } }
+    </style>
+    <noscript><style>#root { display: none; }</style></noscript>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type="module" crossorigin src="/pm-demo/assets/index-J3lUugL1.js"></script>
+    <link rel="stylesheet" crossorigin href="/pm-demo/assets/index-DH5VKuEQ.css">
+  </head>
+  <body>
+    <div id="root">
+      <div class="boot">
+        <div>
+          <h1>Player Manager — демо</h1>
+          <p id="boot-wait">Загружается приложение…</p>
+          <div id="boot-fail" hidden>
+            <p>Скрипт приложения не загрузился. Это проблема сети или устройства, а не данных.</p>
+            <p>Откройте адрес во внешнем браузере:<br /><a href="https://err-codes.ru/pm-demo/">https://err-codes.ru/pm-demo/</a></p>
+            <p>В Telegram: меню в правом верхнем углу → «Открыть в браузере».</p>
+          </div>
+          <small>Демо · данные вымышлены</small>
+        </div>
+      </div>
+    </div>
+    <noscript><div class="boot"><div><h1>Player Manager — демо</h1><p>Нужен JavaScript. Откройте во внешнем браузере: <a href="https://err-codes.ru/pm-demo/">https://err-codes.ru/pm-demo/</a></p></div></div></noscript>
+    <script>
+      setTimeout(function () {
+        if (document.documentElement.dataset.ready) return;
+        document.getElementById("boot-wait").hidden = true;
+        document.getElementById("boot-fail").hidden = false;
+      }, 8000);
+    </script>
+  </body>
+</html>
